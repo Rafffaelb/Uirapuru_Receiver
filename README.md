@@ -67,6 +67,3 @@ This repository serves as a reference for researchers, engineers, and students w
 By providing open data and clear documentation, this project aims to support reproducibility and collaboration within the radiometry and RF engineering communities.
 
 ---
-
-If you want, I can add badges (license, Python version, DOI), a banner image, or a more formal academic description.
-
