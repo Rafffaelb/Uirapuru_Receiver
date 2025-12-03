@@ -1,6 +1,6 @@
-# 📡 Receiver_Characterization
+# 📡 Uirapuru_Receiver
 
-**Receiver_Characterization** is a repository dedicated to the RF characterization of the **Uirapuru Horn** antenna and its associated receiver components. It compiles measurement data, S-parameters, and system analysis obtained through high-precision instrumentation and laboratory experimentation.
+**Uirapuru_Receiver** is a repository dedicated to the RF characterization of the receiver components of the **Uirapuru Horn** antenna. It compiles measurement data, S-parameters, and system analysis obtained through high-precision instrumentation and laboratory experimentation.
 
 ---
 
