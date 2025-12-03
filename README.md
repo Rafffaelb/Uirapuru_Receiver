@@ -39,6 +39,7 @@ Together, these components form the complete front-end signal path of the Uirapu
 
 ## 📁 Repository Structure
 
+<pre>
 Receiver_Characterization/
 │
 ├── Receptor_Uirapuru.ipynb
@@ -49,6 +50,7 @@ Receiver_Characterization/
 │
 └── README.md
     Main repository documentation.
+</pre>
 
 
 ---
