@@ -6,11 +6,11 @@ This repository contains the documentation and analysis code for the Uirapuru Re
 
 - `Receptor_Uirapuru.ipynb`: Main Jupyter Notebook with analysis
 - `S_parameters/`: Directory with S-parameter measurement data in CSV format
-- `plot_s_parameters.py`: Python script to visualize S-parameter data
-- `plot_s_parameters_simple.py`: Simplified version of the plotting script
 - `generate_figures.py`: Script to generate figures for the documentation
 - `Uirapuru_Project.tex`: LaTeX source for the project documentation
+- `Uirapuru_Project.pdf`: Compiled PDF documentation
 - `figures/`: Directory with generated figures
+- `.gitignore`: Git ignore file for project management
 
 ## Prerequisites
 
@@ -44,32 +44,6 @@ pdflatex Uirapuru_Project.tex
 
 You may need to run this command twice to properly generate the table of contents and references.
 
-If you have bibliography entries, you might also need to run:
-
-```bash
-bibtex Uirapuru_Project
-pdflatex Uirapuru_Project.tex
-pdflatex Uirapuru_Project.tex
-```
-
-## Using the Analysis Scripts
-
-### Simple plotting
-
-Run the simple plotting script to generate basic plots of S-parameter data:
-
-```bash
-python plot_s_parameters_simple.py
-```
-
-### Comprehensive analysis
-
-Run the comprehensive analysis script:
-
-```bash
-python plot_s_parameters.py
-```
-
 ## S-Parameter Files
 
 The `S_parameters/` directory contains CSV files with S-parameter measurements. Each file has the following structure:
@@ -95,3 +69,14 @@ The Uirapuru Receiver project focuses on characterizing the RF properties of hor
 - Digital backend (SKARAB)
 
 Measurements were performed using a Rohde & Schwarz ZNB Vector Network Analyzer, providing high-precision S-parameter data across the frequency band of interest.
+
+## Recently Removed Files
+
+Some non-essential files have been removed to simplify the project structure:
+
+- `plot_s_parameters.py`: Alternative visualization script
+- `plot_s_parameters_simple.py`: Simplified version of the plotting script
+- `Uirapuru_Simplified.tex`: Simplified version of the LaTeX document
+- Various LaTeX auxiliary files (.aux, .log, .toc, etc.)
+
+These files can be regenerated if needed, but are not essential for the core functionality of generating and viewing the project documentation.
