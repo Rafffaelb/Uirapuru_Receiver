@@ -1,6 +1,6 @@
 # 📡 Uirapuru_Receiver
 
-**Uirapuru_Receiver** is a repository dedicated to the RF characterization of the receiver components of the **Uirapuru Horn** antenna. It compiles measurement data, S-parameters, and system analysis obtained through high-precision instrumentation and laboratory experimentation.
+**Uirapuru_Receiver** is a repository dedicated to the RF characterization of the receiver components of the **Uirapuru** Horn antenna. It compiles measurement data, S-parameters, and system analyses obtained through high-precision instrumentation and laboratory experimentation. All work was carried out by the LABMET team at UFCG, under the supervision of Edmar Gurjão and Amilcar Queiroz.
 
 ---
 
