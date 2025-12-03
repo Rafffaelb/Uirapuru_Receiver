@@ -1,69 +1,97 @@
-# 📡 Uirapuru_Receiver
+# Uirapuru Receiver Project Documentation
 
-**Uirapuru_Receiver** is a repository dedicated to the RF characterization of the receiver components of the **Uirapuru** Horn antenna. It compiles measurement data, S-parameters, and system analyses obtained through high-precision instrumentation and laboratory experimentation. All work was carried out by the LABMET team at UFCG, under the supervision of Edmar Gurjão and Amilcar Queiroz.
+This repository contains the documentation and analysis code for the Uirapuru Receiver project, which focuses on RF characterization of horn antenna reception components.
 
----
+## Contents
 
-## 🚀 Project Overview
+- `Receptor_Uirapuru.ipynb`: Main Jupyter Notebook with analysis
+- `S_parameters/`: Directory with S-parameter measurement data in CSV format
+- `plot_s_parameters.py`: Python script to visualize S-parameter data
+- `plot_s_parameters_simple.py`: Simplified version of the plotting script
+- `generate_figures.py`: Script to generate figures for the documentation
+- `Uirapuru_Project.tex`: LaTeX source for the project documentation
+- `figures/`: Directory with generated figures
 
-This project provides a complete characterization of the **Uirapuru Horn antenna**, using a **Rohde & Schwarz ZNB Vector Network Analyzer (VNA)** to obtain accurate **S-parameter** measurements. These measurements support ongoing research and development of the Uirapuru radiometric receiver system.
+## Prerequisites
 
-A central component of the receiver is the **hybrid coupler**, designed and assembled at the **Federal University of Campina Grande (UFCG)**. This device enables signal combination and separation, producing **sum (Σ)** and **difference (∆)** outputs, essential to the receiver architecture.
+To work with this project, you need:
 
-All measurements — including the detailed S-parameter analysis of the hybrid coupler — were performed in the **Radiometry Laboratory at UFCG** and are included here through structured datasets and annotated Jupyter notebooks.
+1. Python 3.7 or higher
+2. Required Python packages:
+   ```bash
+   pip install pandas matplotlib numpy jupyter
+   ```
 
----
+## Generating Figures
 
-## 🔧 Hybrid Coupler Characterization
+To generate the figures used in the documentation:
 
-The hybrid coupler plays a critical role in the signal-routing process. Key measurement observations include:
+```bash
+python generate_figures.py
+```
 
-- **Isolation** in the cross-port configurations (e.g., **ports 1–3** and **2–4**)  
-- **Transmission** predominantly between adjacent port pairs: **1–2**, **2–3**, **3–4**, and **1–4**  
-- **S11 stability**, with consistent reflection performance across all ports  
+This will create PNG files in the `figures/` directory.
 
-These results are visualized and discussed in the included Jupyter notebooks, providing clarity and reproducibility for anyone studying the device’s behavior.
+## Compiling the LaTeX Document
 
----
+To compile the LaTeX document into a PDF, you need a LaTeX distribution installed (such as TeX Live, MiKTeX, or MacTeX).
 
-## 🛰️ Full Receiver Integration
+Compile the document using:
 
-When integrated with the central receiver assembly (as shown in the system schematic), the signal chain includes:
+```bash
+pdflatex Uirapuru_Project.tex
+```
 
-- A **WanTcom LNA** providing an additional low-noise amplification stage  
-- An **ADC + DSP system**, implemented using a **SKARAB** processing board from Peralex  
+You may need to run this command twice to properly generate the table of contents and references.
 
-Together, these components form the complete front-end signal path of the Uirapuru receiver — from antenna to digital backend.
+If you have bibliography entries, you might also need to run:
 
----
+```bash
+bibtex Uirapuru_Project
+pdflatex Uirapuru_Project.tex
+pdflatex Uirapuru_Project.tex
+```
 
-## 📁 Repository Structure
+## Using the Analysis Scripts
 
-<pre>
-Receiver_Characterization/
-│
-├── Receptor_Uirapuru.ipynb
-│   Jupyter notebook containing measurement procedures, analysis, and figures.
-│
-├── S_parameters/
-│   Raw and processed S-parameter datasets.
-│
-└── README.md
-    Main repository documentation.
-</pre>
+### Simple plotting
 
+Run the simple plotting script to generate basic plots of S-parameter data:
 
----
+```bash
+python plot_s_parameters_simple.py
+```
 
-## 🌟 Purpose
+### Comprehensive analysis
 
-This repository serves as a reference for researchers, engineers, and students working with:
+Run the comprehensive analysis script:
 
-- Antenna characterization  
-- Hybrid coupler design and analysis  
-- RF receiver architecture  
-- Radiometric instrumentation  
+```bash
+python plot_s_parameters.py
+```
 
-By providing open data and clear documentation, this project aims to support reproducibility and collaboration within the radiometry and RF engineering communities.
+## S-Parameter Files
 
----
+The `S_parameters/` directory contains CSV files with S-parameter measurements. Each file has the following structure:
+
+1. Header row with column names
+2. Empty row
+3. Data rows with frequency (Hz) in the first column and S-parameter values (dB) in the second column
+
+Common files include:
+- S11 measurements for different ports of the hybrid component
+- S21 measurements for various components (filter, LNA, isolator, receptor)
+- S22 measurements for some ports
+
+## Project Overview
+
+The Uirapuru Receiver project focuses on characterizing the RF properties of horn antenna reception components. Key components analyzed include:
+
+- Horn antenna
+- Low Noise Amplifier (LNA)
+- Hybrid coupler
+- Isolator
+- Filters
+- Digital backend (SKARAB)
+
+Measurements were performed using a Rohde & Schwarz ZNB Vector Network Analyzer, providing high-precision S-parameter data across the frequency band of interest.

@@ -1,0 +1,54 @@
+# LaTeX auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+*.lb
+
+# LaTeX intermediate files
+*.dvi
+*.pdfsync
+*.swp
+*.synctex.gz
+*.run.xml
+*.bcf
+*.blg
+
+# Editor temporary files
+*~
+*.tmp
+*.bak
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Generated figures (will be regenerated)
+figures/
+
+# Jupyter notebook checkpoint files
+.ipynb_checkpoints/
+
+# Exclude all .tex files except the final PDF
+*.tex
+!Uirapuru_Project.pdf
+
+# Exclude Python scripts (they can be used to regenerate content)
+plot_s_parameters.py
+plot_s_parameters_simple.py
+generate_figures.py
+Uirapuru_Simplified.tex
+
+# But keep the data and final PDF
+!S_parameters/
+!*.pdf
