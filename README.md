@@ -39,3 +39,26 @@ Together, these components form the complete front-end signal path of the Uirapu
 
 ## 📁 Repository Structure
 
+Receiver_Characterization/
+│
+├── Receptor_Uirapuru.ipynb # Jupyter notebooks for measurement and analysis containing figures
+├── S_parameters/ # Raw and processed S-parameter datasets 
+└── README.md # Repository documentation
+
+---
+
+## 🌟 Purpose
+
+This repository serves as a reference for researchers, engineers, and students working with:
+
+- Antenna characterization  
+- Hybrid coupler design and analysis  
+- RF receiver architecture  
+- Radiometric instrumentation  
+
+By providing open data and clear documentation, this project aims to support reproducibility and collaboration within the radiometry and RF engineering communities.
+
+---
+
+If you want, I can add badges (license, Python version, DOI), a banner image, or a more formal academic description.
+
