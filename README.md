@@ -8,8 +8,6 @@ This repository contains the documentation and analysis code for the Uirapuru Re
 - `S_parameters/`: Directory with S-parameter measurement data in CSV format
 - `generate_figures.py`: Script to generate figures for the documentation
 - `Uirapuru_Project.tex`: LaTeX source for the project documentation
-- `Uirapuru_Project.pdf`: Compiled PDF documentation
-- `figures/`: Directory with generated figures
 - `.gitignore`: Git ignore file for project management
 
 ## Prerequisites
@@ -69,14 +67,3 @@ The Uirapuru Receiver project focuses on characterizing the RF properties of hor
 - Digital backend (SKARAB)
 
 Measurements were performed using a Rohde & Schwarz ZNB Vector Network Analyzer, providing high-precision S-parameter data across the frequency band of interest.
-
-## Recently Removed Files
-
-Some non-essential files have been removed to simplify the project structure:
-
-- `plot_s_parameters.py`: Alternative visualization script
-- `plot_s_parameters_simple.py`: Simplified version of the plotting script
-- `Uirapuru_Simplified.tex`: Simplified version of the LaTeX document
-- Various LaTeX auxiliary files (.aux, .log, .toc, etc.)
-
-These files can be regenerated if needed, but are not essential for the core functionality of generating and viewing the project documentation.
