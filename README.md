@@ -41,9 +41,14 @@ Together, these components form the complete front-end signal path of the Uirapu
 
 Receiver_Characterization/
 │
-├── Receptor_Uirapuru.ipynb # Jupyter notebooks for measurement and analysis containing figures
-├── S_parameters/ # Raw and processed S-parameter datasets 
-└── README.md # Repository documentation
+├── Receptor_Uirapuru.ipynb
+│ Jupyter Notebook containing measurement procedures, analysis, and figures.
+│
+├── S_parameters/
+│ Directory containing raw and processed S-parameter datasets.
+│
+└── README.md
+Main repository documentation.
 
 ---
 
